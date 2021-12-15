@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Instance Of</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {}
+
+      const Arkun = new Employee();
+      const Rifki = new Manager();
+
+      console.info(typeof Arkun);
+      console.info(typeof Rifki);
+
+      // Untuk mengechek sebuah objek merupakan instance dari class tertentu
+      console.info(Arkun instanceof Employee);
+      console.info(Arkun instanceof Manager);
+
+      // Bisa mengecek pewarisan..
+      console.info(Rifki instanceof Manager);
+      console.info(Rifki instanceof Employee);
+    </script>
+  </body>
+</html>
